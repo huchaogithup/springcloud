@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:huchaogithup/springcloud.git
