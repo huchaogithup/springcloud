@@ -1,6 +1,6 @@
 node("nihao"){
    stage('Preparation') {
-      git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+      git 'https://github.com/huchaogithup/springcloud.git'
       mvnHome = tool "maven"
    }
    stage('Build') {
