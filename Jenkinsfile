@@ -4,7 +4,7 @@ node("nihao"){
       mvnHome = tool "maven"
    }
    stage('Build') {
-      bat("'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package")
+      bat("'${mvnHome}\bin\mvn' -Dmaven.test.failure.ignore clean package")
    }
    stage('Results') {
       archive 'target/*.jar'
