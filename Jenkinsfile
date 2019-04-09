@@ -1,4 +1,4 @@
-node {
+node("nihao"){
    stage('Preparation') {
       git 'https://github.com/jglick/simple-maven-project-with-tests.git'
       mvnHome = tool "maven"
