@@ -12,7 +12,6 @@ node("nihao"){
       remote.host="172.27.25.190"
       remote.password="huawei-3com"
       remote.user="root"
-      remote.allowAnyHosts = true
       remote.name = 'test'
       sshCommand remote:remote,command:"mkdir /docker"
    }
