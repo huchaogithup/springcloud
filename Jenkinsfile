@@ -13,6 +13,7 @@ node("nihao"){
       remote.password="huawei-3com"
       remote.user="root"
       remote.allowAnyHosts = true
+      remote.name = 'test'
       sshCommand remote:remote,command:"mkdir /docker"
    }
 }
