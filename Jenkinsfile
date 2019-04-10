@@ -12,6 +12,7 @@ node("nihao"){
       remote.host="172.27.25.190"
       remote.password="huawei-3com"
       remote.user="root"
+      echo "asdasd"
       sshCommand remote:remote,command:"mkdir docker"
    }
 }
