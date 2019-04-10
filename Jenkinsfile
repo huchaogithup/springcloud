@@ -9,7 +9,7 @@ node("nihao"){
    stage('Results') {
       archive 'target/*.jar'
       echo "asdasd"
-      def remote=[]
+      def remote=[:]
       remote.host="172.27.25.190"
       remote.password="huawei-3com"
       remote.user="root"
