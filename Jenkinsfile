@@ -16,6 +16,7 @@ node("nihao"){
       remote.allowAnyHosts=true
       def result=readFile "A.sh"
       echo result
+      sshCommand remote:remote,command:"ls ./"
       sshScript remote:remote,script:result
    }
 }
