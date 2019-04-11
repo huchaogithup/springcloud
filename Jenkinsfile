@@ -14,6 +14,8 @@ node("nihao"){
       remote.user="root"
       remote.name = 'nihao'
       remote.allowAnyHosts=true
-      sshCommand remote:remote,command:"mkdir /docker"
+      def result=readFile "A.sh"
+      echo result
+      sshScript remote:remote,script:
    }
 }
