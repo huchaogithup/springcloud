@@ -9,10 +9,11 @@ node("nihao"){
    stage('Results') {
       archive 'target/*.jar'
       def remote=[:]
-      remote.host="172.27.25.190"
+      remote.host="172.27.25.191"
       remote.password="huawei-3com"
       remote.user="root"
-      remote.name = 'test'
+      remote.name = 'nihao'
+      remote.allowAnyHosts
       sshCommand remote:remote,command:"mkdir /docker"
    }
 }
