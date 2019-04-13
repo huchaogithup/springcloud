@@ -1,2 +1,6 @@
 echo "nihao"
-ls ./
+if wce "nihao"; then
+    echo "success"
+else
+    echo "fail"
+fi
