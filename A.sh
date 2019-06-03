@@ -1,6 +1,6 @@
 echo "nihao"
 if wce "nihao"; then
     echo "success"
-elsea
+else
     echo "fail"
 fi
