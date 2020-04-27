@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: configqq
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:huchaogithup/springcloud.git
